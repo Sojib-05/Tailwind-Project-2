@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="main.css">
+    <title>TailwindCss Project 4</title>
+</head>
+<body >
+
+    <!-- class="bg-gradient-to-t from-[#fbc2eb] to-[#a6c1ee] h-screen" -->
+
+ <!-- Navber Section-->
+
+<header class="bg-white py-3">
+    <nav class="flex items-center justify-between w-[92%]  mx-auto">        
+        <div>
+            <a href="#"> <img src="Photo/logo.png" alt=""></a>
+        </div>
+
+        <div class="nav-links md:static md:min-h-fit absolute bg-white min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5">
+            <ul class="flex md:flex-row flex-col md:items-center  md:gap-[4vw] gap-8">
+                <li> <a href="#" class="text-[#072125] hover:text-red-600 scale-105 duration-500 font-semibold" >Home</a> </li>
+                <li> <a href="#" class="text-[#F44335] hover:text-red-700 scale-105 duration-500 font-semibold" >About Us</a> </li>
+                <li> <a href="#" class="text-[#072125] hover:text-red-600 scale-105 duration-500 font-semibold" >Upskill</a> </li>
+                <li> <a href="#" class="text-[#072125] hover:text-red-600 scale-105 duration-500 font-semibold" >Contact Us</a> </li>
+            </ul>
+        </div>
+
+        <div class="flex items-center gap-6">
+            <button class="bg-[#F44335] text-white px-5 py-2 rounded-full hover:bg-[#ff1100] hover:scale-105 hover:duration-500 font-semibold">Register Interest</button>
+            <i class='bx bx-menu text-3xl cursor-pointer md:hidden' onclick="onToggleMenu(this)" name='menu' > </i>
+        </div>
+        
+    </nav>
+</header>
+
+
+
+<!-- Banner Section-->
+
+<div class="bg-cover bg-center h-screen w-full bg-no-repeat " style="background-image: url(Photo/edwin-andrade-4V1dC_eoCwg-unsplash\ 1.png);">
+
+    <!-- Content Section -->
+
+    <div class="flex flex-col justify-center items-center h-fit pt-14 text-center text-white px-4 md:px-2 py-3">
+        <h2 class="text-lg md:text-xl font-semibold uppercase "> Discover <span class="text-[#F44335] ">-</span> Interact <span class="text-[#F44335]">-</span> Engage </h2>
+
+        <h1 class="text-3xl md:text-5xl font-bold mt-8 ">Connecting <span class="text-[#F44335] underline  cursor-pointer"> talent </span> to <br>opportunity through <span class="text-[#F44335] underline cursor-pointer">skills</span></h1>
+
+        <p class="mt-4 max-w-xl mx-auto text-sm md:text-lg mt-8"> We forster a skill-focussed environment enabling students to navigate their career with their self-paced learning journey and businesses to gain market-ready talent. </p>
+
+        <button class="mt-6 bg-white hover:bg-red-600 text-red-600 hover:text-white hover:scale-105 duration-500 font-bold py-2 px-6 rounded-full mt-10">Ask questions</button>
+
+    </div>
+</div>
+
+
+
+<!-- We Empower Secttion-->
+
+
+
+
+<div class="py-16 gap-x-6">
+   
+  
+    <!-- Cards Section -->
+    <div class="flex flex-col md:flex-row justify-center items-center space-y-6 md:space-y-0 md:space-x-6 px-4">
+
+
+         <!-- Title Section -->
+    <div class="text-center mb-8 max-w-lg ">
+        <h2 class="text-3xl md:text-3xl font-bold text-start px-24 ">
+          At <span class="text-red-500 underline cursor-pointer">C4U</span>,<br> We Empower:
+        </h2>
+      </div>
+
+
+      <!-- Students Card -->
+
+      <div class="bg-gray-900 text-white p-4 rounded-lg shadow-lg max-w-xs h-72 w-64 hover:scale-105 duration-500 cursor-pointer">
+        <div class="flex justify-start mb-2 mt-4">
+            <div class="h-12 w-12 rounded-full bg-red-100 flex items-center justify-center">
+                <i class='bx bxs-book-reader' style='color:#ff0000'  ></i>
+            </div>
+        </div>
+        
+        <h3 class="text-lg font-bold mb-4">Students</h3>
+        <p class="text-sm pb-6">
+          We help students find their way in a fast-evolving world by creating a personalized learning journey guaranteed to help stand out in a crowded job market.
+        </p>
+
+      </div>
+
+      
+
+
+
+      
+      <!-- Universities Card -->
+      <div class="bg-gray-900 text-white p-4 rounded-lg shadow-lg max-w-xs h-72 w-64 hover:scale-105 duration-500 cursor-pointer">
+        <div class="flex justify-start mb-2 mt-4">
+            <div class="h-12 w-12 rounded-full bg-red-100 flex items-center justify-center">
+                <i class='bx bxs-graduation ' style='color:#ff0404'  ></i>
+            </div>
+        </div>
+        
+        <h3 class="text-lg font-bold mb-4">Universities</h3>
+        <p class="text-sm pb-6">
+            We help your emerging talent to unlock their full potential by combining education and work to create future-ready employees
+        </p>
+
+      </div>
+
+  
+
+      
+      <!-- Businesses Card -->
+
+      <div class="bg-gray-900 text-white p-4 rounded-lg shadow-lg max-w-xs h-72 w-64 hover:scale-105 duration-500 cursor-pointer">
+        <div class="flex justify-start mb-2 mt-4">
+            <div class="h-12 w-12 rounded-full bg-red-100 flex items-center justify-center">
+                <i class='bx bx-user' style='color:#ff0404'></i>
+            </div>
+        </div>
+        
+        <h3 class="text-lg font-bold mb-4">Businesses</h3>
+        <p class="text-sm pb-6">
+            We enable businesses to tap into the diverse pool of emerging talent cultivated by universities. To co-create the future workforce and revitalise the business world.
+
+        </p>
+
+      </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- about us -->
+
+  <section id="aboutUs" class="bg-[#F5E5E5]/30 lg:px-20 p-5">
+      <div class=" container lg:mx-auto flex lg:flex-row flex-col lg:grid grid-cols-12 gap-10 lg:divide-x-4 py-20 lg:px-5  px-5">
+              <div class="col-span-6 lg:ml-20">
+                  <h6 class="uppercase text-[#F44335] font-semibold">About us</h6>
+                  <h1 class="text-3xl font-semibold text-[#2D3142] lg:py-8 py-4">Our Mission </h1>
+                  <p class="text-lg text-gray-900">
+                      To create a personalised  pathway for continuous learning and transferrable skills development.
+                  </p>
+                 
+                        <div class="py-20">
+                            <button class="bg-white text-[#F44335] border border-red-600  px-5 py-2 rounded-full hover:bg-[#ff1100] hover:text-white hover:scale-110 hover:duration-500 font-semibold ">Find out more 
+                                <i class='bx bx-right-arrow-alt'></i>
+                              </button>
+                        </div>
+                        <div class="py-28"></div>                             
+                     
+                  <div>
+                      <img src="Photo/Right.png" alt="">
+                  </div>
+                  
+              </div>
+             
+  
+              <div class="col-span-6 lg:px-10 ">
+                  <div class="lg:py-20 " >
+                      <img src="Photo/Group 238902.png" alt="">
+                      <div class="py-28"></div>    
+                  </div>
+              <div class="">
+                  <h6 class="uppercase text-[#F44335] font-semibold">About us</h6>
+                  <h1 class="text-3xl font-semibold text-[#2D3142] lg:py-8 py-4">Our Vision</h1>
+                  <p class="text-lg text-gray-900">
+                      To have a globally recognised strategic bridge between education and the job market
+                  </p>
+                  <div class="py-20">
+                    <button class="bg-white text-[#F44335] border border-red-600  px-5 py-2 rounded-full hover:bg-[#ff1100] hover:text-white hover:scale-110 hover:duration-500 font-semibold ">Find out more 
+                        <i class='bx bx-right-arrow-alt'></i>
+                      </button>
+                </div>
+              </div>
+           </div>
+      </div>
+  </section>
+
+
+
+
+  <div class="bg-white flex lg:flex-row flex-col  justify-between items-center container mx-auto gap-12  py-20 lg:px-10 px-7">
+      <div class="relative flex flex-col items-start">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEQAAABACAYAAACjgtGkAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAWdSURBVHgB7Zy/cxtFFMe/8mRIqKwKqPC5gQ7ZBe7A5wI6hmQGOpjIM9AxY/MXSJ6htzLQwYyUCR2FHUIFhWTThcI2HTSWU5FKpkpSbd53b08+yTpJ92P3bCmfmdXpx+l097237719e6cSUqKU8mWxIm3dLMumFcGxtHOzfFgqlTpwgYhQllaT1lNXG+5fU5oHG6hAiF11PWmqPIWRjW2pq28R01BDVtT1tYo42mqCtZRihKBz3JPmY/boStsQx9sd9WGcIEcIIses0kWMKAvDb4gYu5htMYgnrTnqgwFBRIyqLLYxH/jm5A/Q7zLG2bQRqDdPbEQTuaiFMCx5KIBjPEWBDIRjLYixjioKoIMzrOIn3MNjFAS7jh++CC0ke9KSkXM8R4H0jz8UxMd845vcCwvGXDy8osoHWoiPHDnHi0Tre1IxWMGbqOCtRN9L+jtTUNGPYiF7Kid66pmC+k6tqB/l+XNli231u/6dI/VU5cgp9VhAjt2ljFuS1b2vw+gGHtg4i9jEb2hIRKJVeVhEjnj6UVkY2tfUgT6Dnvo+V0upqkd6u3fVr7YscOkGLJT96vhQL5lbMJyWcfPSOl355CH+leX/Zp1b+oxX5Mz7WLq0PtfpyNp38R5a+AS2KFEWOISJ2A7+1Ms4KAxF5cE7xnMmCP3Jt/hDzu6Jfn0b7+JTvCPW8LZYx+vy+TNtLffxtxaLz+kn9vB53r5iHG4EoRh0snS20xwkuwcdJy2J67XxpStRvAU4YAeHWgx2gSN8NfHg6E/YZXbxkbaUO/gFrrAuSEu6AM82RWjg40Tf3cZaP4xTVBdYF4Q+gTQlMoyKNpOoiaXwew38BRdYFYTmTgdJ6xgVSqchSPbWTNg9g22sCnKC//SSESUL60bMEweFpBtIyYGcraqk0VFo2nSaIT2TumeNEJ7JHYcrawzj+5LcRaE1bYnfSUtqQRZNZhmlgjdgg7B4xO4TZUl+f3gfljKKn1oQ5hNtfDF2nXBns9ZMz/TE/mVLC6LQGvLEqg+haGTYrJMSfr9itmcTq4LQxBldaPJh+E0KIxVzmSyRKgnW85CmGZluiwNMUx8JE7KaGUHbxrogwcj1A20lSbNNWgZbVVL+qqORr5OxzJY4viB1fzx1csWuQgEZyl1ZB3EiCH1J2HU4gp0G+hyKQjEcDv/tFojoM6Ljlw38rC2EoXLSuKZlnPApvondngW81HnIJFgMZjHoCF9L+A0SNo5cKUhjymlL+p4Q+qBl/KCtzWZ9JHdBeBZZv+CBs/6xEsleF02myfBZixzsMAd4ImIc9lN2QiHoi9jlWGyyJUruPoQ7G4oRVwweTsGHiZvnZdGIQtK32JrmyNVCeCBs3On6mMiwj390S8M0Ff0s5CoIz3zUCcbBlP62FJjj4NhnXLpPUeqWQrE1pzqKsKtQkHG5BSNM1vFPWpwKQidIE2/pqYYnsetxSoKsOxi7DLMAmLG1A2ghDMOci+nqn1VapLCV8Zp+n+s5no+5QPKyU+WYturqOVpfPRh4v64O9ftNdaKKgHqwy/CWCg8OYR7CxvC8iUfaEhhCw+mKqvspTEIdtCAHYB3YMXv4zExtXtRJKFLT4kT2BPSok2MZH8H1qYVAywj8xs2BzLQANkulUktfuCui9IBi9+YKsMxr38PU/R7mm054I0BoIbSOHuaX/uXd2kLkBZOCebWS4+i17tGL/2klvBJv3nzJcvS+mf7w31jJDuaLneGbiC7dUSWW0gDrwrMPu8rq8Jtxt5gxL/Exu3Qx7S1mhjswqewM0sWYmxBHCkJ/Ysxp1iJPR9pqnBhToXgBcQEj4pzh1dr53UsoG/OktdT1pK0S3OpeQgLMhusI/hHCw9WFKcR9aftJ/ykikSBRVDBKZuN9Jp5pRSR157j4qwwO4fcRhNRUlcCXhYpE9cDkRT4AAAAASUVORK5CYII=" alt="">
+          <h2 class="text-2xl font-semibold text-gray-800 py-3">Discover</h2>
+          <p class="text-lg text-gray-700">We uncover students unique skills to stand out in a crowded job market
+          </p>
+          <img class="absolute right-5 top-5" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD4AAACYCAYAAAC8hFq3AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADrSURBVHgB7dmrEcJQAADBR4bPIBC0gUXSv6QSInEwCV0QsbcdnL7dersd5+v1NCDvw+EzDVThmsI1hWsK1xSuKVxTuKZwTeGawjWFawrX7J/n83pflu/4s3ma9mNDu7GR1+NxGRtpIYkK1xSuKVxTuKZwTeGawjWFawrXFK4pXFO4pnBN4ZrCNYVrCtcUrilcU7imcE3hmsI1hWsK1xSuKVxTuKZwTeGawjWFawrXFK4pXFO4pnBN4ZrCNYVrCtcUrilcU7imcE3hmsI1hWsK1xSuKVxTuKZwTeGawjWFawrXFK4pXFO4pnDND5/rDvzzy3PeAAAAAElFTkSuQmCC" alt="">
+      </div>
+      <div class="relative flex flex-col items-start">
+          <img src="data:image/png;base64,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" alt="">
+          <h2 class="text-2xl font-semibold text-gray-800 py-3">Interact</h2>
+          <p class="text-lg text-gray-700">We open doors to new opportunities by expanding your transferrable skills
+          </p>
+          <img class="absolute right-5 top-5" src="data:image/png;base64,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" alt="">
+        </div>
+      <div class="relative flex flex-col items-start">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEQAAABACAYAAACjgtGkAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAP/SURBVHgB7ZwxUxNBFMf/l2FGrUilVnI22kkopCUppFNgRm2FTwB8AsgnSCzsnCGOdhYESy2IWGljsNOGwwptjJVare/t3TKXM5fEZDd7ubsf83J3CQTy5+3u/+3dnoMREUKUaVOimKfg/WIQNvCCaFO8pWg5jtOBaUiEIsUOxYlIPnvC/6cZFeKHmD4OKVzogt6sLKYjIwZRG+bzOgPE2KHNLtKDR1Gh/sWL+4ZYQQJFt5A+PPQRpacgKRZD4SFGlH8ESWEzicOjWIgOz12CkBjsKz4iOzRJkLXwE1FBTmjjIluskShNdVBQO0FTcZE9avTZzx12IfTCOrKJi9AAIgUhhdaRzexQrKgdlSGPkG1KIqh7CsL3+WXkrPIDZ0gJOcwSP8zAQHZ08IdcT4e+fsMELk27uJiFZmRisCDz0IiHn6jgudyapI5lbOI2dELdx9wMNHOAz1KMTSyS5FdggiqOSJD32gUhrrMgLjSimskqblBbnIMJnuGTbJImKCCni0QI0sY3433OsFgXpIp3WMBTrOGlHJ1sY1WQJr7QxMuR3OcsYVFsY00QFmADr8hRXJDHvG3hFNt4A5tYEYT7C5UN+3got6u4SQXVLRpOP8hmZAsrgmzjtRRlD/e6HGcdd6R34WbUxnfYQLsxG4aadJmL0qeER5ciLlLGPJDNqYTLsIEVQTgr4mqRfq9NgtyYRcgFiZALEiEXJEIuSITECMJDbhJwdJyt45pEWe4Ofskija14EZfkc1vkOfpN5rAXYUGUjY/CcywVvDgv/tTvcIMruMq4RibvLjRQ0eJDjnEmJ2zYZUY9BNcnHP0EGeQ72Khx+B6FRZgNvXYm318XWo1Zjax3dJbMxRP5R4/DMYnhv/+ynIkLw5mjc/bMuFOtUDo3aMqvGpT5o9DCV7l1J3CRo3FBlihjWJDdMStYbi6TqG+MC7JOJT13euOiOmjTTKS4i0v1Xm1/Es2iH1aqXYZHBu4Qo/BE0T7uwxbWBOEhmr3DaSRLVkgQm1gThI0Y9y9JgwUZexBXtvuAHOukz69wP6TT9s/AvzxxrEsi1OQwhw129GVah2uZOu1sQgM6LfSwlHA1tgb6XxyCM6QNTZg6uT0hpA5c/jeRw/DCIxSCS5tbyJGJoSaIDpBtPEqMFu8oQRqAxhp6+qiqHSlI0GweI5twdjTUQXhOlYdfD9mjGj44FyTIkg1ki0Y4O5iuWfegY6kiG3jo8Vnjlphpc68JxcOwS8wUKRbFQ59FiLEnqugHeA1J2poP2/O+y1QHItKzkLkuQiunxkL4S913xXRyKAzeA8Cl2BLJzxi+R8GhGEEIByMi/CWtZfjrTNwgbN4ug/sHnpBpYYzbZfwFBAmFA/lvpUMAAAAASUVORK5CYII=" alt="">
+          <h2 class="text-2xl font-semibold text-gray-800 py-3">Engage</h2>
+          <p class="text-lg text-gray-700">To forester a skill focussed environment that enable students to navigate their ideal career
+          </p>
+          <img class="absolute right-5 top-5" src="data:image/png;base64,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" alt="">
+      </div>
+  </div>
+  
+  
+     
+  
+
+ <!--Rectangle-section-->
+
+ <section class="max-w-12xl mx-auto relative py-1">
+    <div class="max-w-10xl mx-auto mt-20 md:mt-40">
+        <div class="px-5 sm:px-12 sm:px-[55px] md:px-16 xl:px-[148px]">
+        <div >
+            <div class="mb-14 relative">
+               <div>
+                <h1 class="text-4xl sm1:text-4xl font-semibold mb-24">
+                    The Creative Team<br> behind <span class="text-red-500">the door</span>
+                </h1>
+               </div>
+               <img class="absolute -bottom-10 sm1:-bottom-16 left-44 sm1:left-64 w-full h-screen sm1:w-28" src="Photo/Rectangle 32.png" alt="ring-circel">
+           
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 items-center gap-8 md:gap-6 xl:gap-10">
+
+                <div class="py-10  shadow-boxshadow bg-gray-500 hover:bg-blue-100 hover:scale-105  transition duration-500 ease-in-out group rounded-xl flex flex-col items-center justify-center relative">
+            <img class="mb-6 transform hover:scale-110 transition duration-300 delay-100 ease-in-out" src="Photo/image 3.png" alt="image1">
+                <h2 class="text-xl sm:text-2xl lg:text-xl font-bold mb-3 dark:group-hover:text-black dark:text-white  ">Ekta Mahajan</h2>
+                <p class="text-black/40 text-xs mb-6 dark:text-white/75 dark:group-hover:text-black text-center">Founder & C.E.O</p>
+
+
+                <div class="flex items-center gap-2">
+                    <div class="circel-animation size-8 bg-circel/10 flex items-center justify-center p-2 rounded-full circel-animation">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAASCAYAAAC9+TVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAD4SURBVHgBnZLt0cFAFIXPzSjgLeHVAR3QARVQgv/GWBP8pgJ0QAVKoISoQP77uM6KmQybyK4zs5vM3p1n78cBrDTuQKdn6GyMHyRQ8w/UDvz/ex0ZyHCCAEUEjHPAMy0TmhEhaLjHFjTvwVMlEKv7AAGQMh0RACm5rBv4Q3RXHLqFZHJbcKyJG6p5TyiiLVJ+u1zpR2zgO+qssTJk6tJ2QQWe0VkjM2gueb8Qt3i0hytbMh/QDp6WsOVf2qwicSHZS31uK1SL2V8tKJXCcCBISsMaGybq09i1fA17gST5DqkGpXaqEaokI8OtybVFboET6Uv2o27t8QCU81NCaCIPAAAAAABJRU5ErkJggg==" alt="path1">
+                    </div>
+                    <div class="size-8 bg-circel/10 flex items-center justify-center p-2 rounded-full circel-animation">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAF4SURBVHgB1VQ9SMNAFH53BFQEqYMdxCEOzop0tw7iWicXoenWdtGuVWw6WN1spw5d2tFJVOpauzqInQUJDoKDNhkMDsmdL1Jr/pqGgKAfhCTfvfv4vveOA/jrIH5ko9Eocc6TMAamaWZyuZxi5wR3Ub1elxhjMoRxQ0gVXyk7R33qRAgJTBFzcwIEO7jBWGXHBkFYC0rg6CHlJ7up20l5834qBiHwNGeox1tak5FiYajxI1Y5ZWCQjbuJmt0husnYH4w5XF94oT0GvEd45dzjEMkOdiVJgMrls1k1rpE9pC2nqo850RIu7mi8P21IVg0n+4vWgqeHHJh8uP2qLD0LrcLljEgpTdvX0WW3ndBb7cSHxYsDWvVEdjt4mDdK+ezb8tWqvo7/irXpMW7U8tk+R7ESjDgNgVNGrKCbznVCb8beBXUQL3Bg4wS/wAEkFAtTOjJyZPyqoArR4Z0yHpcuRATuvfj+dl5f/EhCKg3hgc7QCDmowr/BJ33sl7QoMZHWAAAAAElFTkSuQmCC" alt="path2">
+                    </div>
+                    <div class="size-8 bg-circel/10 flex items-center justify-center p-2 rounded-full circel-animation">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAANCAYAAABy6+R8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADLSURBVHgBnZHRDYJADIb/EnhnhHMDRsAJZAPZQH3WRBJ4dwRHkBEcATdwBAZQa8kdoSEeEv6kx9Hr12uvBC4zgHaYLTqEsiZiqVjrvPEfKglUhjXwWinYKwVxCkRmxk0IFZTLsnH7h9zM7qARM7AtjCHsQac7uJLgd+Z8Laiw5XJV90kD+ETFU3LeJPjiHPWPnkbiwtiSKBsf+aEJLYLUQ9BZ6t/afeT66B6QY/Ff5WsURP0w0yEB6z66ueXD76clG1MqYEqBjODYfAE4jTBxhmnArgAAAABJRU5ErkJggg==" alt="path3">
+                    </div>
+                </div>
+                <div class="absolute -left-5 -bottom-5 lg:-left-10 lg:-bottom-10 -z-10">
+                    
+                </div>
+
+                </div>
+
+                <div class="py-10  shadow-boxshadow bg-gray-500 hover:bg-blue-100 hover:scale-105  transition duration-500 ease-in-out group rounded-xl flex flex-col items-center justify-center relative">
+                <img class="mb-6 transform group-hover:scale-110 transition duration-300 delay-100 ease-in-out" src="Photo/image 4.png" alt="image-2">
+                <h2 class="text-xl sm:text-2xl lg:text-xl font-bold mb-3 dark:group-hover:text-black dark:text-white ">Toby Potter-Drake</h2>
+                <p class="text-black/40 text-xs mb-6 dark:text-white/75 dark:group-hover:text-black text-center">Product Manager Associate</p>
+                <div class="flex items-center gap-2">
+                    <div class="size-8 bg-circel/10 flex items-center justify-center p-2 rounded-full circel-animation">
+                        <img  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAASCAYAAAC9+TVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAD4SURBVHgBnZLt0cFAFIXPzSjgLeHVAR3QARVQgv/GWBP8pgJ0QAVKoISoQP77uM6KmQybyK4zs5vM3p1n78cBrDTuQKdn6GyMHyRQ8w/UDvz/ex0ZyHCCAEUEjHPAMy0TmhEhaLjHFjTvwVMlEKv7AAGQMh0RACm5rBv4Q3RXHLqFZHJbcKyJG6p5TyiiLVJ+u1zpR2zgO+qssTJk6tJ2QQWe0VkjM2gueb8Qt3i0hytbMh/QDp6WsOVf2qwicSHZS31uK1SL2V8tKJXCcCBISsMaGybq09i1fA17gST5DqkGpXaqEaokI8OtybVFboET6Uv2o27t8QCU81NCaCIPAAAAAABJRU5ErkJggg==" alt="path1">
+                    </div>
+                    <div class="size-8 bg-circel/10 flex items-center justify-center p-2 rounded-full circel-animation">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAF4SURBVHgB1VQ9SMNAFH53BFQEqYMdxCEOzop0tw7iWicXoenWdtGuVWw6WN1spw5d2tFJVOpauzqInQUJDoKDNhkMDsmdL1Jr/pqGgKAfhCTfvfv4vveOA/jrIH5ko9Eocc6TMAamaWZyuZxi5wR3Ub1elxhjMoRxQ0gVXyk7R33qRAgJTBFzcwIEO7jBWGXHBkFYC0rg6CHlJ7up20l5834qBiHwNGeox1tak5FiYajxI1Y5ZWCQjbuJmt0husnYH4w5XF94oT0GvEd45dzjEMkOdiVJgMrls1k1rpE9pC2nqo850RIu7mi8P21IVg0n+4vWgqeHHJh8uP2qLD0LrcLljEgpTdvX0WW3ndBb7cSHxYsDWvVEdjt4mDdK+ezb8tWqvo7/irXpMW7U8tk+R7ESjDgNgVNGrKCbznVCb8beBXUQL3Bg4wS/wAEkFAtTOjJyZPyqoArR4Z0yHpcuRATuvfj+dl5f/EhCKg3hgc7QCDmowr/BJ33sl7QoMZHWAAAAAElFTkSuQmCC" alt="path2">
+                    </div>
+                    <div class="size-8 bg-circel/10 flex items-center justify-center p-2 rounded-full circel-animation">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAANCAYAAABy6+R8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADLSURBVHgBnZHRDYJADIb/EnhnhHMDRsAJZAPZQH3WRBJ4dwRHkBEcATdwBAZQa8kdoSEeEv6kx9Hr12uvBC4zgHaYLTqEsiZiqVjrvPEfKglUhjXwWinYKwVxCkRmxk0IFZTLsnH7h9zM7qARM7AtjCHsQac7uJLgd+Z8Laiw5XJV90kD+ETFU3LeJPjiHPWPnkbiwtiSKBsf+aEJLYLUQ9BZ6t/afeT66B6QY/Ff5WsURP0w0yEB6z66ueXD76clG1MqYEqBjODYfAE4jTBxhmnArgAAAABJRU5ErkJggg==" alt="path3">
+                    </div>
+                </div>
+                </div>
+
+                <div class="py-10  shadow-boxshadow bg-gray-500 hover:bg-blue-100 hover:scale-105  transition duration-500 ease-in-out group rounded-xl flex flex-col items-center justify-center relative">
+                <img class="mb-6 transform group-hover:scale-110 transition duration-300 delay-100 ease-in-out" src="Photo/image 2.png" alt="image-3">
+                <h2 class="text-xl sm:text-2xl lg:text-xl font-bold mb-3 dark:group-hover:text-black dark:text-white ">Ross Davies</h2>
+                <p class="text-black/40 text-xs mb-6 dark:text-white/75 dark:group-hover:text-black text-center">Corporate Growth Associate</p>
+                <div class="flex items-center gap-2">
+                    <div class="size-8 bg-circel/10 flex items-center justify-center p-2 rounded-full circel-animation">
+                        <img  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAASCAYAAAC9+TVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAD4SURBVHgBnZLt0cFAFIXPzSjgLeHVAR3QARVQgv/GWBP8pgJ0QAVKoISoQP77uM6KmQybyK4zs5vM3p1n78cBrDTuQKdn6GyMHyRQ8w/UDvz/ex0ZyHCCAEUEjHPAMy0TmhEhaLjHFjTvwVMlEKv7AAGQMh0RACm5rBv4Q3RXHLqFZHJbcKyJG6p5TyiiLVJ+u1zpR2zgO+qssTJk6tJ2QQWe0VkjM2gueb8Qt3i0hytbMh/QDp6WsOVf2qwicSHZS31uK1SL2V8tKJXCcCBISsMaGybq09i1fA17gST5DqkGpXaqEaokI8OtybVFboET6Uv2o27t8QCU81NCaCIPAAAAAABJRU5ErkJggg==" alt="path1">
+                    </div>
+                    <div class="size-8 bg-circel/10 flex items-center justify-center p-2 rounded-full circel-animation">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAF4SURBVHgB1VQ9SMNAFH53BFQEqYMdxCEOzop0tw7iWicXoenWdtGuVWw6WN1spw5d2tFJVOpauzqInQUJDoKDNhkMDsmdL1Jr/pqGgKAfhCTfvfv4vveOA/jrIH5ko9Eocc6TMAamaWZyuZxi5wR3Ub1elxhjMoRxQ0gVXyk7R33qRAgJTBFzcwIEO7jBWGXHBkFYC0rg6CHlJ7up20l5834qBiHwNGeox1tak5FiYajxI1Y5ZWCQjbuJmt0husnYH4w5XF94oT0GvEd45dzjEMkOdiVJgMrls1k1rpE9pC2nqo850RIu7mi8P21IVg0n+4vWgqeHHJh8uP2qLD0LrcLljEgpTdvX0WW3ndBb7cSHxYsDWvVEdjt4mDdK+ezb8tWqvo7/irXpMW7U8tk+R7ESjDgNgVNGrKCbznVCb8beBXUQL3Bg4wS/wAEkFAtTOjJyZPyqoArR4Z0yHpcuRATuvfj+dl5f/EhCKg3hgc7QCDmowr/BJ33sl7QoMZHWAAAAAElFTkSuQmCC" alt="path2">
+                    </div>
+                    <div class="size-8 bg-circel/10 flex items-center justify-center p-2 rounded-full circel-animation">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAANCAYAAABy6+R8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADLSURBVHgBnZHRDYJADIb/EnhnhHMDRsAJZAPZQH3WRBJ4dwRHkBEcATdwBAZQa8kdoSEeEv6kx9Hr12uvBC4zgHaYLTqEsiZiqVjrvPEfKglUhjXwWinYKwVxCkRmxk0IFZTLsnH7h9zM7qARM7AtjCHsQac7uJLgd+Z8Laiw5XJV90kD+ETFU3LeJPjiHPWPnkbiwtiSKBsf+aEJLYLUQ9BZ6t/afeT66B6QY/Ff5WsURP0w0yEB6z66ueXD76clG1MqYEqBjODYfAE4jTBxhmnArgAAAABJRU5ErkJggg==" alt="path3">
+                    </div>
+                </div>
+                </div>
+
+                <div class="py-10  shadow-boxshadow bg-gray-500 hover:bg-blue-100 hover:scale-105  transition duration-500 ease-in-out group rounded-xl flex flex-col items-center justify-center relative">
+                <img class="mb-6 transform group-hover:scale-110 transition duration-300 delay-100 ease-in-out" src="Photo/image 1.png" alt="image-4">
+                <h2 class="text-xl sm:text-2xl lg:text-xl font-bold mb-3 dark:group-hover:text-black dark:text-white ">Leo crozier </h2>
+                <p class="text-black/40 text-xs mb-6 dark:text-white/75 dark:group-hover:text-black text-center">Software Developer</p>
+                <div class="flex items-center gap-2">
+                    <div class="size-8 bg-circel/10 flex items-center justify-center p-2 rounded-full circel-animation">
+                        <img  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAASCAYAAAC9+TVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAD4SURBVHgBnZLt0cFAFIXPzSjgLeHVAR3QARVQgv/GWBP8pgJ0QAVKoISoQP77uM6KmQybyK4zs5vM3p1n78cBrDTuQKdn6GyMHyRQ8w/UDvz/ex0ZyHCCAEUEjHPAMy0TmhEhaLjHFjTvwVMlEKv7AAGQMh0RACm5rBv4Q3RXHLqFZHJbcKyJG6p5TyiiLVJ+u1zpR2zgO+qssTJk6tJ2QQWe0VkjM2gueb8Qt3i0hytbMh/QDp6WsOVf2qwicSHZS31uK1SL2V8tKJXCcCBISsMaGybq09i1fA17gST5DqkGpXaqEaokI8OtybVFboET6Uv2o27t8QCU81NCaCIPAAAAAABJRU5ErkJggg==" alt="path1">
+                    </div>
+                    <div class="size-8 bg-circel/10 flex items-center justify-center p-2 rounded-full circel-animation">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAF4SURBVHgB1VQ9SMNAFH53BFQEqYMdxCEOzop0tw7iWicXoenWdtGuVWw6WN1spw5d2tFJVOpauzqInQUJDoKDNhkMDsmdL1Jr/pqGgKAfhCTfvfv4vveOA/jrIH5ko9Eocc6TMAamaWZyuZxi5wR3Ub1elxhjMoRxQ0gVXyk7R33qRAgJTBFzcwIEO7jBWGXHBkFYC0rg6CHlJ7up20l5834qBiHwNGeox1tak5FiYajxI1Y5ZWCQjbuJmt0husnYH4w5XF94oT0GvEd45dzjEMkOdiVJgMrls1k1rpE9pC2nqo850RIu7mi8P21IVg0n+4vWgqeHHJh8uP2qLD0LrcLljEgpTdvX0WW3ndBb7cSHxYsDWvVEdjt4mDdK+ezb8tWqvo7/irXpMW7U8tk+R7ESjDgNgVNGrKCbznVCb8beBXUQL3Bg4wS/wAEkFAtTOjJyZPyqoArR4Z0yHpcuRATuvfj+dl5f/EhCKg3hgc7QCDmowr/BJ33sl7QoMZHWAAAAAElFTkSuQmCC" alt="path2">
+                    </div>
+                    <div class="size-8 bg-circel/10 flex items-center justify-center p-2 rounded-full circel-animation">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAANCAYAAABy6+R8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADLSURBVHgBnZHRDYJADIb/EnhnhHMDRsAJZAPZQH3WRBJ4dwRHkBEcATdwBAZQa8kdoSEeEv6kx9Hr12uvBC4zgHaYLTqEsiZiqVjrvPEfKglUhjXwWinYKwVxCkRmxk0IFZTLsnH7h9zM7qARM7AtjCHsQac7uJLgd+Z8Laiw5XJV90kD+ETFU3LeJPjiHPWPnkbiwtiSKBsf+aEJLYLUQ9BZ6t/afeT66B6QY/Ff5WsURP0w0yEB6z66ueXD76clG1MqYEqBjODYfAE4jTBxhmnArgAAAABJRU5ErkJggg==" alt="path3">
+                    </div>
+                </div>
+                
+                </div>
+                
+
+            </div>
+            </div>
+        </div>
+        
+    </div>
+    </div>
+    
+    <div class="absolute top-0 left-0 right-0 -z-20  ">
+        <img class="w-full h-[500px] dark:opacity-20" src="Photo/Rectangle 32.png" alt="Rectangle">
+    </div>
+    
+</section>
+
+
+
+
+<!--footer-section-->
+
+
+<footer class="border-b">
+    <div class="container mx-auto w-5/6 flex flex-col md:flex-row items-center py-12 ">
+      <div class="w-full md:w-2/6">
+        <img class="brightness-200" src="photo/logo.png" alt=""/>
+        <nav class="flex flex-col mt-7">
+          <ul class="flex flex-col gap-2">
+            <li class="cursor-pointer">Level39</li>
+            <li class="cursor-pointer">One Canada Square,</li>
+            <li class="cursor-pointer">Canary Wharf,</li>
+            <li class="cursor-pointer">London,</li>
+            <li class="cursor-pointer">E145AB</li>
+          </ul>
+        </nav>
+      </div>
+      <div class="w-full md:w-1/6 mt-10 md:mt-0">
+        <h4 class="font-semibold">Home</h4>
+        <nav class="flex flex-col mt-5">
+          <ul class="flex flex-col gap-2">
+            <li class="cursor-pointer">Collaborations</li>
+            <li class="cursor-pointer">Statistics</li>
+            <li class="cursor-pointer">How It Works</li>
+            <li class="cursor-pointer">Testimonials</li>
+          </ul>
+        </nav>
+      </div>
+      <div class="w-full md:w-1/6 mt-10 md:mt-0">
+        <h4 class="font-semibold">About Us</h4>
+        <nav class="flex flex-col mt-5">
+          <ul class="flex flex-col gap-2">
+            <li class="cursor-pointer">Who We Are</li>
+            <li class="cursor-pointer">Mission statement</li>
+            <li class="cursor-pointer">Our Vision</li>
+            <li class="cursor-pointer">The Team</li>
+          </ul>
+        </nav>
+      </div>
+      <div class="w-full md:w-1/6 mt-10 md:mt-0">
+        <h4 class="font-semibold">Upskill</h4>
+        <nav class="flex flex-col mt-5">
+          <ul class="flex flex-col gap-2">
+            <li class="cursor-pointer">It Support</li>
+            <li class="cursor-pointer">Project Managment</li>
+            <li class="cursor-pointer">Our VisionData Analysts</li>
+            <li class="cursor-pointer">Ux Design</li>
+          </ul>
+        </nav>
+      </div>
+      <div class="w-full md:w-1/6 mt-10 md:mt-0">
+        <h4 class="font-semibold">Contact Us</h4>
+        <nav class="flex flex-col mt-5">
+          <ul class="flex flex-col gap-2">
+            <li class="cursor-pointer">Your message</li>
+            <li class="cursor-pointer">Email</li>
+            <li class="cursor-pointer">Phone number</li>
+            <li class="cursor-pointer">Linkedin</li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </footer>
+  <footer>
+    <p class="py-4 text-center ">Copyright 2022 Creatives For You LTD</p>
+  </footer>
+
+
+
+
+
+
+
+
+<script>
+    const navLinks = document.querySelector('.nav-links');
+    function onToggleMenu(e){
+        e.name = e.name === 'menu'? 'x' : 'menu'
+        navLinks.classList.toggle('top-[9%]')
+    }
+</script>
+
+</body>
+</html>
